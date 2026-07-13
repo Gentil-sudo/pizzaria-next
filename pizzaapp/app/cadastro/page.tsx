@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { LoginForm } from "@/components/LoginForm";
+import { RegisterForm } from "@/components/RegisterForm";
 import { getSession } from "@/lib/auth/session";
 
-export default async function Home() {
+export default async function CadastroPage() {
   const session = await getSession();
   if (session) redirect("/menu");
 
   return (
     <div className="min-h-screen flex">
-      {/* Painel de login */}
       <div className="flex flex-1 flex-col justify-center items-center px-6 py-12 bg-gradient-to-br from-stone-50 via-red-50/30 to-orange-50/40">
         <div className="w-full max-w-md">
           <div className="mb-8 text-center">
@@ -17,21 +16,18 @@ export default async function Home() {
             <h1 className="font-serif text-4xl sm:text-5xl italic font-semibold text-red-600">
               Casa di Massa
             </h1>
-            <p className="mt-3 text-stone-500">
-              Autêntica pizza italiana, feita com amor
-            </p>
+            <p className="mt-3 text-stone-500">Crie sua conta e peça já</p>
           </div>
 
           <div className="rounded-2xl border border-stone-200/80 bg-white/80 backdrop-blur-sm p-8 shadow-xl shadow-stone-200/50">
             <h2 className="mb-6 text-xl font-semibold text-stone-800">
-              Entrar na sua conta
+              Criar conta
             </h2>
-            <LoginForm />
+            <RegisterForm />
           </div>
         </div>
       </div>
 
-      {/* Hero image */}
       <div className="hidden lg:block relative flex-1">
         <Image
           src="/assets/forno-pizza.png"
@@ -41,14 +37,6 @@ export default async function Home() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-stone-50/80 via-transparent to-transparent" />
-        <div className="absolute bottom-12 left-12 max-w-sm">
-          <p className="font-serif text-3xl italic text-white drop-shadow-lg">
-            &ldquo;La vita è troppo corta per pizza mediocre&rdquo;
-          </p>
-          <p className="mt-2 text-white/80 text-sm drop-shadow">
-            — Tradição italiana desde 1987
-          </p>
-        </div>
       </div>
     </div>
   );
