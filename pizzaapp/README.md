@@ -1,36 +1,172 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍕 PizzaApp
 
-## Getting Started
+Uma aplicação web de pizzaria desenvolvida com **Next.js**, permitindo visualizar o cardápio, autenticação de usuários e gerenciamento do carrinho de compras.
 
-First, run the development server:
+> Projeto desenvolvido para praticar o desenvolvimento Full Stack utilizando as tecnologias mais utilizadas no mercado.
+
+## 🚀 Demonstração
+
+🔗 **Aplicação:** *(adicione aqui o link da Vercel)*
+
+Exemplo:
+
+```
+https://pizzaapp.vercel.app
+```
+
+---
+
+## 📸 Preview
+
+> Adicione alguns prints da aplicação aqui.
+
+- Página inicial
+- Cardápio
+- Login
+- Carrinho
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Drizzle ORM
+- PostgreSQL
+- Neon Database
+- NextAuth/Auth.js
+- Vercel
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+pizzaapp/
+├── app/
+├── components/
+├── lib/
+│   ├── db/
+│   └── auth/
+├── scripts/
+├── drizzle/
+├── public/
+└── ...
+```
+
+---
+
+## ⚙️ Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Gentil-sudo/pizzaria-next.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd pizzaria-next/pizzaapp
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+---
+
+## 🔑 Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto contendo:
+
+```env
+DATABASE_URL=sua_url_do_neon
+AUTH_SECRET=seu_auth_secret
+```
+
+---
+
+## ▶️ Executando o Projeto
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🗄️ Banco de Dados
 
-To learn more about Next.js, take a look at the following resources:
+Aplicar as migrações:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run db:push
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Popular o banco com dados iniciais:
 
-## Deploy on Vercel
+```bash
+npm run db:seed
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deploy
+
+O projeto está configurado para deploy automático na **Vercel**.
+
+Sempre que um novo commit é enviado para a branch `main`, uma nova versão é publicada automaticamente.
+
+---
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto foram utilizados conceitos como:
+
+- Estruturação de aplicações com Next.js
+- Componentização com React
+- Estilização com Tailwind CSS
+- Banco de dados PostgreSQL
+- Modelagem utilizando Drizzle ORM
+- Autenticação de usuários
+- Deploy na Vercel
+- Integração com Neon Database
+- Versionamento com Git e GitHub
+
+---
+
+## 📌 Funcionalidades
+
+- ✅ Listagem de pizzas
+- ✅ Cadastro de usuários
+- ✅ Login
+- ✅ Carrinho de compras
+- ✅ Persistência de dados com PostgreSQL
+- ✅ Interface responsiva
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Enzo Gentil**
+
+- GitHub: https://github.com/Gentil-sudo
+- LinkedIn: *(adicione seu LinkedIn se tiver)*
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo e aprendizado.
