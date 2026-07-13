@@ -6,26 +6,7 @@ Uma aplicação web de pizzaria desenvolvida com **Next.js**, permitindo visuali
 
 ## 🚀 Demonstração
 
-🔗 **Aplicação:** *(adicione aqui o link da Vercel)*
-
-Exemplo:
-
-```
-https://pizzaapp.vercel.app
-```
-
----
-
-## 📸 Preview
-
-> Adicione alguns prints da aplicação aqui.
-
-- Página inicial
-- Cardápio
-- Login
-- Carrinho
-
----
+🔗 **Aplicação:** *(https://pizzaria-next-sandy.vercel.app/)*
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -38,8 +19,6 @@ https://pizzaapp.vercel.app
 - Neon Database
 - NextAuth/Auth.js
 - Vercel
-
----
 
 ## 📁 Estrutura do Projeto
 
@@ -55,8 +34,6 @@ pizzaapp/
 ├── public/
 └── ...
 ```
-
----
 
 ## ⚙️ Instalação
 
