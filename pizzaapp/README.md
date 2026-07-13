@@ -140,7 +140,7 @@ Durante o desenvolvimento deste projeto foram utilizados conceitos como:
 Desenvolvido por **Enzo Gentil**
 
 - GitHub: https://github.com/Gentil-sudo
-- LinkedIn: *(adicione seu LinkedIn se tiver)*
+- LinkedIn: *(https://www.linkedin.com/in/enzo-gentil-xavier/)*
 
 ---
 
